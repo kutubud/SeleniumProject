@@ -12,7 +12,7 @@ public class EditLead {
 		@Test
 		public void editLead() {
 			
-	    	System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+	    	System.setProperty("webdriver.chrome.driver", "C:\\SeleniumSoft\\chromedriver_win32\\chromedriver_win32\\chromedriver.exe");
 			
 			  ChromeDriver driver = new ChromeDriver();
 			  //Load URL
@@ -36,12 +36,27 @@ public class EditLead {
 	    	driver.findElementByLinkText("Leads").click();
 	    	//click Find leads link
 	    	driver.findElementByLinkText("Find Leads").click();
+	    	
+	    	//Enter lead ID
+	    	driver.findElementByXPath("//input[@name = 'id']").sendKeys("10406");
 	    	//enter first name
 	    	driver.findElementByXPath("(//input[@name='firstName'])[3]").sendKeys("Hema");
-	    	//click Find lead button
+	    	
+	    	//enter last name
+	    	driver.findElementByXPath("(//input[@name = 'lastName'])[1]").sendKeys("Mali");
+	    	
+	       //click Find lead button
+	    	
 	    	driver.findElementByXPath("//button[text()='Find Leads']").click();
 			
-			
+	
+    	//enter company name
+    	driver.findElementByXPath("(//input[@name='companyName'])[1]").sendKeys("ABC");
+    	
+    	//click Find lead button
+    	driver.findElementByXPath("//button[text()='Find Leads']").click();	
+    	
+    	driver.close(); 
 			
 		}
 

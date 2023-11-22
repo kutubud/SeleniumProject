@@ -10,7 +10,7 @@ public class PromptAlert {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-	System.setProperty("webdriver.chrome.driver","C:\\SeleniumSoft\\chromedriver_win32\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","C:\\Users\\kutub\\Downloads\\chromedriver_win32");
 	ChromeDriver driver = new ChromeDriver();
 	driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 	driver.manage().window().maximize();

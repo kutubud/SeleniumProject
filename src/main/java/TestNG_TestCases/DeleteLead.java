@@ -10,7 +10,7 @@ public class DeleteLead {
 	@Test
 	public void deleteLead() {
 		
-		 System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver", "C:\\SeleniumSoft\\chromedriver_win32\\chromedriver_win32\\chromedriver.exe");
 			
 			ChromeDriver driver = new ChromeDriver();
 			driver.get("http://leaftaps.com/opentaps/control/login");
@@ -34,6 +34,7 @@ public class DeleteLead {
 		    driver.findElementByXPath("//input[@name='phoneNumber']").sendKeys("1234567");
 		    // enter email address
 		    //driver.findElementByXPath("//input[@name='emailAddress']").sendKeys("abc@abc.com");
+		    driver.close();
 		    
 	}
 }

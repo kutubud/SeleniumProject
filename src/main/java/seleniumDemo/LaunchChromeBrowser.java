@@ -4,13 +4,15 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class LaunchChromeBrowser {
 
 	public static void main(String[] args) throws InterruptedException {
 
 		//Launch ChromeBrowser
-System.setProperty("webdriver.chrome.driver", "C:\\SeleniumSoft\\chromedriver_win32\\chromedriver.exe");
-
+//System.setProperty("webdriver.chrome.driver", "C:\\SeleniumSoft\\chromedriver_win32\\chromedriver.exe");
+WebDriverManager.chromedriver().setup();
 //Creating object of ChromeDriver class
 //Syntax of object creation: ClassName obj = new ClassName();
 

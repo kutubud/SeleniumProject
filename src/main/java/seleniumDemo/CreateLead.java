@@ -7,11 +7,11 @@ import org.openqa.selenium.support.ui.Select;
 public class CreateLead {
 
 	public static void main(String[] args) {
-	 System.setProperty("webdriver.chrome.driver", "C:\\SeleniumSoft\\chromedriver_win32\\chromedriver.exe");
+	 System.setProperty("webdriver.chrome.driver", "C:\\SeleniumSoft\\chromedriver_win32\\chromedriver_win32 (1)\\chromedriver.exe");
 		
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("http://leaftaps.com/opentaps/control/login");
-		
+	
 		
 	 	driver.manage().window().maximize();
 		driver.findElementById("username").sendKeys("DemoSalesManager");

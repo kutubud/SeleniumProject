@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class ConfirmationAlert {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumSoft\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\kutub\\Downloads\\chromedriver_win32\\chromedriver.exe");
   ChromeDriver driver = new ChromeDriver();
 driver.get("http://leaftaps.com/opentaps/control/login");
 driver.manage().window().maximize();

@@ -6,12 +6,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
-
-
-
-
-
-
 public class ProjectSpecificWrapper {
 	public ChromeDriver driver;
 

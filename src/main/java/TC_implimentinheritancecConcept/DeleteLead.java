@@ -24,7 +24,8 @@ public class DeleteLead extends ProjectSpecificWrapper {
 		    driver.findElementByXPath("//input[@name='phoneNumber']").sendKeys("1234567");
 		    // enter email address
 		    //driver.findElementByXPath("//input[@name='emailAddress']").sendKeys("abc@abc.com");
-		    
+		     
+		    driver.close();
 	}
 }
 		    

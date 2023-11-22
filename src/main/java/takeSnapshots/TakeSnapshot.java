@@ -59,10 +59,14 @@ public class TakeSnapshot {
 				
 				
 				}finally {
+					driver.getScreenshotAs(OutputType.)
+				}
 				
-					//Take snapshot/ScreenShot
+					/*Take snapshot/ScreenShot
+		
 						
-					//File src = driver.getScreenshotAs(OutputType.File); // take snapshot and store in Temp File
+					//File src = driver.getScreenshotAs(OutputType.File); 
+					// take snapshot and store in Temp File
 					driver.getScreenshotAs(org.openqa.selenium.OutputType.FILE);
 					//Path/location-1, where it will store after moved
 					File dest = new File("C:\\SeleniumSoft\\snap\\img.png"); //define the destination file
@@ -73,14 +77,14 @@ public class TakeSnapshot {
 				//File dest = new File("./snap/image.png");
 				
 					FileUtils.copyFile(src, dest);
-					FileUtils.copyFile
+					//FileUtils.copyFile
 				//FileUtils.copyFile(src, dest); //moved file source to destination(img or image file)
 					
 				}
 				// click create lead
 				driver.findElementByXPath("//input[@value='Create Lead']").click();
 
-				driver.close();
+				driver.close();*/
 			}
 
 			}

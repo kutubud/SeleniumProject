@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 public class MoveToElement {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\kutub\\Downloads\\chromedriver_win32\\chromedriver.exe");
 ChromeDriver driver=new ChromeDriver();
 driver.get("http://mrbool.com/");
 driver.manage().window().maximize();

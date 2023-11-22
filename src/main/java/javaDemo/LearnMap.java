@@ -28,7 +28,8 @@ public class LearnMap {
 		System.out.println("....................");
 		
 		
-		System.out.println(mp.size());
+		//System.out.println(mp.size());
+		
 		
 	
 		
@@ -48,8 +49,9 @@ public class LearnMap {
 		
 		System.out.println(mp.size());
 		
-		for(Entry<String, Integer>eachMp:mp.entrySet()) {
-			System.out.println(eachMp.getKey() +"  "+ eachMp.getValue());}
+		/*for(Entry<String, Integer>eachMp:mp.entrySet()){
+			System.out.println(eachMp.getKey() +"  "+ eachMp.getValue());}*/
+		
 		
 		System.out.println("............");
 		

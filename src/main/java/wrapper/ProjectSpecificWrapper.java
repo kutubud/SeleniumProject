@@ -12,7 +12,7 @@ public class ProjectSpecificWrapper {
 	@BeforeMethod
 	public void login() {
 		
-System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+System.setProperty("webdriver.chrome.driver", "C:\\SeleniumSoft\\chromedriver_win32\\chromedriver_win32\\chromedriver.exe");
 		
 		driver = new ChromeDriver();
 		//load URL

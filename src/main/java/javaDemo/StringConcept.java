@@ -6,6 +6,8 @@ public class StringConcept {
 		
 		String text = "String concept";
 	    String text1 = "String concept";
+	    //String text2 = "Football world cup";
+	   
 
 		System.out.println(System.identityHashCode(text));
 		//System.out.println(System.identityHashCode(text1));
@@ -19,7 +21,7 @@ public class StringConcept {
 		
 		//1.equals()- returns true/false
 		System.out.println(text1.equals(text));
-		//System.out.println(text1.equals(text));
+	
 		//System.out.println(text.equals(text1));	
 		
 		
@@ -28,12 +30,11 @@ public class StringConcept {
 		System.out.println(text==text1);
 	
 		
-		/*System.out.println(System.identityHashCode(text));
-		System.out.println(System.identityHashCode(text1));*/
 		
 		//2.Length() returns count of string with white space
-		String text2 = "Learning String";
+		String text2 = "Football world cup";
 		System.out.println(text2.length());
+		System.out.println(text.length());
 		
 		
 		//3. Concat()- add more than one string

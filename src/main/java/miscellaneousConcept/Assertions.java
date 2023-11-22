@@ -2,6 +2,7 @@ package miscellaneousConcept;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
@@ -11,7 +12,7 @@ public class Assertions {
 		
 	
 
-		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\SeleniumSoft\\chromedriver_win32\\chromedriver_win32\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
 
@@ -26,8 +27,11 @@ public class Assertions {
 		//System.out.println(driver.getTitle());
 		String title = driver.getTitle();
 		System.out.println(title);
-
-		//Assertion Syntax: Assert.assertEquals(Actual result,"Expected result","Assert Message");
+		
+		
+		
+      
+      //Assertion Syntax: Assert.assertEquals(Actual result,"Expected result","Assert Message");
 		Assert.assertEquals(title, "Bank of America | Online Banking | Log In | User ID","Asserting page title");
 		
 	

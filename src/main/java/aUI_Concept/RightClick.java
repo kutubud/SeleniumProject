@@ -10,22 +10,34 @@ import org.openqa.selenium.interactions.Actions;
 public class RightClick {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chorme.driver","./drivers/chromedriver.exe");
-		ChromeDriver driver=new ChromeDriver();
-		driver.get("https://jqueryui.com/selectable/");
+		System.setProperty("webdriver.chorme.driver","C:\\SeleniumSoft\\chromedriver_win32\\chromedriver_win32");
+		
+		 ChromeDriver driver = new ChromeDriver(); 
+		
+		driver.get(" https://swisnl.github.io/jQuery-contextMenu/demo.html");
+		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
-		driver.switchTo().frame(0);
-WebElement Item1 = driver.findElementByXPath("//li[text()='Item 1']");
 		
-		WebElement Item3 = driver.findElementByXPath("//li[text()='Item 3']");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
-		WebElement Item5 = driver.findElementByXPath("//li[text()='Item 5']");
-				
+		
+		
+
+		
+		//Select Right click element and store it in a variable
+		   WebElement rightclick = driver.findElementByXPath("//span[text()='right click me']");
+		
+		//Create Actions class object and pass the driver
 		Actions action = new Actions(driver);
+		
+		//Perform Right click
+		action.contextClick(rightclick).perform();
+		
+		//Explicitly wait
 		Thread.sleep(3000);
-		//action.keyDown(Keys.CONTROL).click(Item1).click(Item3).click(Item5).perform();
-		action.keyDown(Keys.CONTROL).click(Item1).click(Item3).click(Item5).release().perform();
+		
+		//driver.close();
+		driver.quit();
 		
 		
 		
